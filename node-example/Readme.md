@@ -1,15 +1,15 @@
-# Run a ERAM Validator
+# Run a DJT Validator
 ## Setting up a node
-1. Git clone https://github.com/eramsmartchain/CoinNetwork.git
+1. Git clone https://github.com/TrumpChainDev/CoinNetwork.git
 
 2. Copy source form node-example to root folder
 ```
-cp -r CoinNetwork/node-example/ERAM  /root/
+cp -r CoinNetwork/node-example/DJT  /root/
 ```
 3. Create an Account
 
 ```
-cd /root/ERAM
+cd /root/DJT
 chmod +x openethereum
 ./openethereum account new --config nodes/validator/node.toml
 ```
@@ -38,13 +38,13 @@ reseal_on_txs = "none"
 
     Stake
 
-    To stake ERAM coin, all you should do is sending your ERAM coin to the ERAM Consensus contract address over the ERAM network from the validator address.
-    The ERAM Consensus contract address: 0x476c29c5589BFE3C0E4A509bb92545882bb4Db82
-    The easiest way to do so, is to import your private key or key-store file to your favourite wallet (for example Metamask), switch network to ERAM and send the ERAM coin to the Consensus contract address.
+    To stake DJT coin, all you should do is sending your DJT coin to the DJT Consensus contract address over the DJT network from the validator address.
+    The DJT Consensus contract address: 0x3FA18721a6D5eAd62d77f1E9DA4D848d4fb4461A
+    The easiest way to do so, is to import your private key or key-store file to your favourite wallet (for example Metamask), switch network to DJT and send the DJT coin to the Consensus contract address.
 
     You can find your key-store (containing your private key) and the password for the created account in:
-    /ERAM/nodes/validator/keys/ERAM/UTC--xxxx
-    /ERAM/nodes/validator/node.pwd
+    /DJT/nodes/validator/keys/DJT/UTC--xxxx
+    /DJT/nodes/validator/node.pwd
 
 6. Wait for 1 cycle (approximately 48 hours).
 
